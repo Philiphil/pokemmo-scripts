@@ -229,6 +229,8 @@ function getPokemon(string $name) : array
     $talent=substr($talent,$start, strlen($talent)-$end-$start);
     switch ($talent){
         case "Lévitation": $final["Sol"]=0;break;
+        case "Absorbe-Eau": $final["Eau"]=0;break;
+        case "Torche": $final["Feu"]=0;break;
         case "Paratonnerre ":
         case "Absorbe-Volt":  $final["Electrik"]=0;break;
     }
